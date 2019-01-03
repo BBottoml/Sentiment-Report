@@ -1,4 +1,5 @@
 some-test/
+__pycache__/
 
 # dotenv
 .env
