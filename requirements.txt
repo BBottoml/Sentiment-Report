@@ -1,0 +1,7 @@
+#Here will be the details from pip, etc.
+chartify==2.3.5
+requests==2.21.0
+chardet==3.0.4
+idna==2.8
+urllib3==1.24.1
+pytwits==0.1

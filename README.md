@@ -1,10 +1,10 @@
 # Sentiment Report
 
-Twitter & Stocktwits report generator using Chartify. Works by taking a ticker symbol input and parsing social media sites to determine the sentiment of a security. The program then generates a report using the Spotify developed data science library, Chartify. 
+Twitter & Stocktwits report generator using Chartify. Works by taking a ticker symbol input and parsing social media sites to determine the sentiment of a security. The program then generates a report using the Spotify developed data science library, Chartify.
 
 ## Getting Started
 
-To view the report, you will need to either have [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) installed and in a directory within your PATH or run the program using Anaconda. See the [Chartify Repo](https://github.com/spotify/chartify) for more details 
+To view the report, you will need to either have [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) installed and in a directory within your PATH or run the program using Anaconda. See the [Chartify Repo](https://github.com/spotify/chartify) for more details
 
 ### Installation
 
@@ -14,7 +14,7 @@ To start, clone this repo
 git clone git@github.com:BBottoml/Sentiment-Report.git
 ```
 
-After cloning, create a virtual environment 
+After cloning, create a virtual environment
 
 ```
 virtualenv some-proj
@@ -31,10 +31,10 @@ pip3 install requirements.txt
 Ensure correct installation of ChromeDriver or alternate option
 
 ```
-python3 main.py
+python3 report.py
 ```
 
-### Example 
+### Example
 
 See an example [Here](https://bradleybottomlee.com) (Coming Soon)
 
@@ -48,5 +48,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Thank you to Chartify devs 
+* Thank you to Chartify devs
 * Sentiment analysis providers
