@@ -1,7 +1,7 @@
 # Sentiment Report - security_info.py
 import pytwits
 
-# Create class security (security is ticker)
+# Create obj for given security (security is ticker input)
 class Security:
     
     # Initalizer
@@ -9,14 +9,13 @@ class Security:
         
         self.ticker = ticker
     
-        # Retrieve company name using Stocktwit api
+        # Retrieve company name using Stocktwits api
         try:
         
             stocktwits = pytwits.StockTwits(access_token=None) 
-            symbols = stocktwits.search(path='search/symbols',
+            info = stocktwits.search(path='search/symbols',
                                     q=self.ticker)
-            info = symbols[0]
-            self.name = info.title
+            self.name = info[0].title
 
         # Ticker doesn't exist
         except:
