@@ -15,7 +15,7 @@ def main():
     # Create chartify graph one
     ch1 = chartify.Chart()
     ch1.set_title(security_obj.name)
-    ch1.set_subtitle('Report for '+security_obj.ticker)
+    ch1.set_subtitle('Report for '+security_obj.ticker+' | Price: '+security_obj.price)
 
     # Display charts
     # Chromedriver installation
