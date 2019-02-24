@@ -21,7 +21,7 @@ def main():
 
     # Create obj for ticker and generate data
     securityObj = security.Security(ticker)
-    #securityObj.dataGen()
+    securityObj.dataGen()
 
     # Create chartify graph one
     ch1 = chartify.Chart()
