@@ -30,7 +30,11 @@ class Security:
 
             print('Please enter a valid ticker symbol')
             exit()    
-
+    def getTicker(self):
+        return self.ticker
+    def getPrice(self):
+        return self.price
+        
 
         
 
