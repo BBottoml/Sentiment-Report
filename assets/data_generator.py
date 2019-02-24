@@ -6,7 +6,6 @@ import os
 import time
 import requests
 
-
 def generate(ticker):
     """
         EXTRACT DATA FROM STOCKTWITS API
@@ -48,6 +47,8 @@ def generate(ticker):
         stocktwit_url += "max=" + str(last_message_id)
 
     api_hits = 0
+    print("\nGathering data...")
+    print("This may take a few minutes...")
     while True:
         # response = req_proxy.generate_proxied_request(stocktwit_url)
         try:
@@ -88,7 +89,7 @@ def generate(ticker):
                 csvfile.writerow(obj)
                 file.flush()
 
-            print("API HITS TILL NOW = {}".format(api_hits))
+            #print("API HITS TILL NOW = {}".format(api_hits))
 
             # NO MORE MESSAGES
             if not response['messages']:

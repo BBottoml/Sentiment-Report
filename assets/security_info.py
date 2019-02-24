@@ -1,7 +1,7 @@
 # Sentiment Report -- security_info.py
 import pytwits
 from finviz.screener import Screener
-import data_generator as dataGenerator
+from assets import data_generator as dataGenerator
 
 # Create obj for given security (security is ticker input)
 class Security:

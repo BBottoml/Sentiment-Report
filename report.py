@@ -17,11 +17,11 @@ def main():
 
     # Prompt for ticker
     ticker = input('\nEnter a ticker symbol (e.g: AMZN): ')
-    print('\nGenerating Report...')
 
     # Create obj for ticker & generate data
     securityObj = security.Security(ticker)
     securityObj.dataGen()
+    print('\nGenerating Report...')
 
     # Create chartify graph one
     ch1 = chartify.Chart()
