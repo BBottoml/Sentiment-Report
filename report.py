@@ -19,9 +19,8 @@ def main():
     ticker = input('\nEnter a ticker symbol (e.g: AMZN): ')
     print('\nGenerating Report...')
 
-    # Create obj for ticker and generate data
+    # Create obj for ticker
     securityObj = security.Security(ticker)
-    securityObj.dataGen()
 
     # Create chartify graph one
     ch1 = chartify.Chart()
@@ -45,6 +44,10 @@ def main():
         except:
             print('You do not have Chromedriver installed correctly. Please reference README.md.\nAlternatively, run program using Anaconda')
             exit()
+    
+    # Generate data
+    securityObj.dataGen()
+
 
 if __name__ == "__main__":
     main()
