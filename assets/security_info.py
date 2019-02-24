@@ -1,9 +1,13 @@
-# Sentiment Report - security_info.py
+# Sentiment Report -- security_info.py
 import pytwits
 from finviz.screener import Screener
+import data_generator as dataGenerator
 
 # Create obj for given security (security is ticker input)
 class Security:
+    '''
+    Security object 
+    '''
     
     # Initalizer
     def __init__(self,ticker,name=None,price=None):
@@ -31,14 +35,26 @@ class Security:
             print('Please enter a valid ticker symbol')
             exit()    
     
-    # getTicker()
+    def getName(self):
+        '''
+        Returns company name
+        '''
+        return self.name
+
     def getTicker(self):
+        '''
+        Returns ticker symbol
+        '''
         return self.ticker
-    
-    # getTicker() 
+
     def getPrice(self):
+        '''
+        Returns stock price
+        '''
         return self.price
-        
-
-        
-
+    
+    def dataGen(self):
+        '''
+        Generates CSV data from StockTwits
+        '''
+        dataGenerator.generate(self.ticker) 
