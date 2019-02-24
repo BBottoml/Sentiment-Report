@@ -1,5 +1,5 @@
 # Sentiment Report - report.py 
-from assets import security_info as se
+from assets import security_info as security
 import chartify
 
 # Main func 
@@ -10,12 +10,12 @@ def main():
     print('\nGenerating Report...')
 
     # Create obj for ticker
-    security_obj = se.Security(ticker)
+    securityObj = security.Security(ticker)
 
     # Create chartify graph one
     ch1 = chartify.Chart()
-    ch1.set_title(security_obj.name)
-    ch1.set_subtitle('Report for '+security_obj.getTicker()+' | Price: '+security_obj.getPrice())
+    ch1.set_title(securityObj.name)
+    ch1.set_subtitle('Report for '+securityObj.getTicker()+' | Price: '+securityObj.getPrice())
 
     # Display charts
     # Chromedriver installation
